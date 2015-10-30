@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DictonaryService", "..\DictonaryService\DictonaryService\DictonaryService.csproj", "{15B3E0D2-6217-493A-A690-158C497F5318}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{BBB6EF60-1889-4019-BEF4-B6C5CED755D0}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestDictonaryService", "UnitTestDictonaryService\UnitTestDictonaryService.csproj", "{CD8C0DD5-1CE8-4C15-86A8-1B4595A20CC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "..\Client\Client\Client.csproj", "{53F88B98-1E1F-405F-AF82-5F2C69FDE268}"
+	ProjectSection(ProjectDependencies) = postProject
+		{15B3E0D2-6217-493A-A690-158C497F5318} = {15B3E0D2-6217-493A-A690-158C497F5318}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD8C0DD5-1CE8-4C15-86A8-1B4595A20CC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD8C0DD5-1CE8-4C15-86A8-1B4595A20CC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD8C0DD5-1CE8-4C15-86A8-1B4595A20CC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD8C0DD5-1CE8-4C15-86A8-1B4595A20CC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53F88B98-1E1F-405F-AF82-5F2C69FDE268}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53F88B98-1E1F-405F-AF82-5F2C69FDE268}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53F88B98-1E1F-405F-AF82-5F2C69FDE268}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53F88B98-1E1F-405F-AF82-5F2C69FDE268}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
