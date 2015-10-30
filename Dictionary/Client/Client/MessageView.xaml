@@ -1,0 +1,18 @@
+﻿<Window x:Class="Client.MessageView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" Icon="/Icons/Libr.ico"  ResizeMode="NoResize"
+             Height="132" Width="313" Background="Beige" >
+    <Grid>
+        <StackPanel>
+            <TextBlock x:Name="Message" Height="70" TextWrapping="Wrap" FontStyle="Italic" FontWeight="Bold"></TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="Ok" Width="80" Background="LightGreen">OK</Button>
+                <Label Width="140"></Label>
+                <Button x:Name="Cancel" Width="80" Background="LightPink">CANCEL</Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
