@@ -9,16 +9,21 @@ Microsoft Visual Studio 2012, Среда Microsoft SQL Server Management Studio,
 C#,Net 4.0 C# для WCF сервиса,WPF (MVVM фреймворк Caliburn.Micro), Entity Framework(Code First DB(many - to - many)).
 
 Разработаны  3 приложения : 
+
 DictonaryService – приложение , реализующее WCF – сервис по работе с
  клиентским приложением и работу с базой данных.
+ 
 Client – клиентское приложение,реализованноное с помощью MVVM фреймворка Caliburn.Micro , позволяющее пользователю работать
  со англо – русским словарём :
 добавлять, удалять, обновлять слова, производить поиск перевода.
+
 UnitTestDictonaryService тестирование сервиса 2 способами : 
 с помощью UnitTest , и с помощью Effort c созданием БД в ОЗУ ПК .
+
 Для начала работы необходимо настроить сервис :
     в проекте DictonaryService находим, открываем  файл app.config
   в нём делаем изменения  в строке <connectionStrings>
+  
  ![settingsappconfig](https://cloud.githubusercontent.com/assets/11519562/10878116/07461dcc-8165-11e5-87e4-7bf9339ccc4a.jpg)
 Сохраняем, закрываем файл.
 После этого запускаем DictonaryService – должен запуститься тестовый клиент WCF.
