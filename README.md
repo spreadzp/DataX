@@ -1,6 +1,13 @@
 # DataX
+ТЗ :
+Разработать приложение для наполнения базы данных соответсвия слов на русском словам на английском языке. Приложение включает в себя WCF сервис который добавляет слова в свой словарь, ищет перевод и клиентское приложение которое использует WCF сервис для добавления слов и получения перевода
+
 Выполнение работы проводилось посредством инструментов :
-Microsoft Visual Studio 2012, Среда SQL Server Management Studio, Microsoft Expression Bland. 
+Microsoft Visual Studio 2012, Среда Microsoft SQL Server Management Studio, Microsoft Expression Bland. 
+
+Использованы технологии и фреймворки:
+C#,Net 4.0 C# для WCF сервиса,WPF (MVVM фреймворк Caliburn.Micro), Entity Framework(Code First DB(many - to - many)).
+
 Разработаны  3 приложения : 
 DictonaryService – приложение , реализующее WCF – сервис по работе с
  клиентским приложением и работу с базой данных.
